@@ -1,0 +1,34 @@
+---
+title: "Entrance Survey Super Fun"
+author: "Rong Sang"
+date: "9/16/2020"
+output: html_document
+---
+
+#Read in Data
+```{r}
+DF <- read.csv("hudk4050-entrance-survey.csv", header = TRUE)
+
+mode(DF$program)
+
+is.numeric(DF$program)
+```
+
+Simple Math
+```{r}
+7 + 8
+x <- 8/12
+mode(x)
+x
+
+```
+
+
+#variable manipulation
+```{r}
+mean(DF$UTC)
+
+DF$UTC.ms <- DF$UTC*DF$math.stat
+```
+
+
